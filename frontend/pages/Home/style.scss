@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+$grey-one: rgb(204, 204, 204);
+$orange-one: rgb(255, 149, 0);
+
+.containerHome {
+  display: grid;
+  grid-template-columns: 0.6fr 2fr 0.6fr;
+  grid-template-rows: 800px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-rows: 640px;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+.leftpColumn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: rgba(21, 255, 0, 0);
+  margin-right: 10px;
+  border: 1px solid $grey-one;
+  border-radius: 10px;
+  overflow: hidden;
+
+
+  @media screen and (max-width: 1024px) {
+    height: 640px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .filtersHeader {
+    color: black;
+    font-size: 25px;
+    margin-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .categoryDiv {
+
+
+    .divOneLeftColumn {
+      overflow: auto;
+      background-color: rgba(255, 0, 0, 0);
+      height: 700px;
+
+      @media screen and (max-width: 1024px) {
+        height: 640px;
+      }
+    }
+
+    .categoryHeader {
+      color: black;
+      font-size: 20px;
+      margin-left: 20px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .arrayCategoryClass {
+      margin-left: 20px;
+      display: flex;
+      margin-top: -20px;
+
+      .inpCheckbox {
+        margin-top: 3px;
+      }
+
+      .textInput {
+        color: black;
+        font-size: 15px;
+        margin-left: 5px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+    }
+
+    .lineCategory {
+      width: 85%;
+      background-color: $grey-one;
+      border: none;
+      height: 1px;
+    }
+  }
+
+
+  .price {
+    height: 20px;
+    margin-left: 20px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid $grey-one;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .divSlider {
+
+
+
+    .slider {
+      -webkit-appearance: none;
+      width: 80%;
+      height: 5px;
+      border-radius: 5px;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: $orange-one;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: $orange-one;
+      cursor: pointer;
+    }
+  }
+}
+
+.centerColumn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgba(255, 191, 0, 0);
+  overflow: scroll;
+
+  @media screen and (max-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .divCardsNets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 0;
+      margin-left: 0%;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+      margin-left: 0%;
+      width: 100%;
+    }
+
+
+    .cardsCardsDiv {
+      width: 25%;
+      height: 350px;
+      margin-left: 30px;
+      border: 1px solid $grey-one;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 10px;
+      background-color: rgba(255, 0, 0, 0);
+
+      @media screen and (max-width: 1024px) {
+        width: 36%;
+        height: 200px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 290px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 90%;
+        height: 340px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      @media screen and (max-width: 375px) {
+        width: 90%;
+        height: 340px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      .imgClass {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .textHeaderCard {
+        color: black;
+        font-size: 17px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .textPriceCard {
+        color: $grey-one;
+        font-size: 17px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .checkOutBtn {
+        width: 80%;
+        margin-top: 5px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        background-color: $orange-one;
+        border: 1px solid $orange-one;
+        cursor: pointer;
+      }
+
+      .btns {
+        display: flex;
+
+        .getBascet {
+          width: 10px;
+          height: 40px;
+          margin-top: 5px;
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 19%;
+          border-radius: 10px;
+          border: 1px solid $grey-one;
+          background-color: white;
+          cursor: pointer;
+
+          .iconBascet {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rightColumn {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  border: 1px solid $grey-one;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    height: 650px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .productSale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .noneProduct {
+      margin-top: 400px;
+      width: 70%;
+      text-align: center;
+      color: $grey-one;
+      font-size: 15px;
+      margin-left: 5px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+
+  .selectedCardsDiv {
+    width: 90%;
+    margin-top: 20px;
+
+    .imgSelectedOne {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .textSectedOneNamed {
+      color: black;
+      font-size: 15px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .textSectedOnePrice {
+      color: $grey-one;
+      font-size: 15px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .descriptionHeader {
+      color: black;
+      font-size: 20px;
+      font-family: 'Ubuntu', sans-serif;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 15px;
+      }
+    }
+
+    .descriptionText {
+      color: black;
+      font-size: 15px;
+      font-family: 'Ubuntu', sans-serif;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+
+    .blockUl {
+      margin-left: -20px;
+
+      .liText {
+        color: black;
+        font-size: 15px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 40px;
+
+        @media screen and (max-width: 1024px) {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .btnSelectedCardsGettingBascet {
+      width: 100%;
+      height: 50px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 1px solid $grey-one;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .iconBascet {
+        width: 19%;
+      }
+    }
+  }
+}

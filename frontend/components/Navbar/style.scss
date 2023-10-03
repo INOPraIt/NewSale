@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+$grey-one: rgb(170, 170, 170);
+
+.containerNavbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 90px 10px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .namedSite {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+
+    .linkHome {
+      display: flex;
+      text-decoration: none;
+
+      .onePartHeader {
+        color: black;
+        font-size: 25px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 20px;
+
+        @media screen and (max-width: 320px) {
+          font-size: 20px;
+          margin-top: 30px;
+          margin-left: 5px;
+        }
+      }
+
+      .twoPartHeader {
+        color: rgb(255, 149, 0);
+        font-size: 25px;
+        font-family: 'Ubuntu', sans-serif;
+
+        @media screen and (max-width: 320px) {
+          font-size: 20px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .searchInput {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgba(255, 0, 0, 0);
+
+    .inpSearch {
+      margin-top: 22px;
+      height: 35px;
+      width: 70%;
+      border-radius: 20px;
+      border: 1px solid $grey-one;
+      padding-left: 10px;
+      font-size: 15px;
+      outline: none;
+
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
+    }
+  }
+
+  .profileAndSettings {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgba(0, 0, 255, 0);
+
+
+    .blockLinksNavbar {
+      display: flex;
+      margin-left: 20%;
+
+
+      @media screen and (max-width: 3000px) {
+        display: flex;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+    }
+
+    .link {
+      margin-left: 20px;
+      outline: none;
+      text-decoration: none;
+
+      .blockImgLink {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $grey-one;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+
+        .iconBascet {
+          width: 30px;
+        }
+
+        .iconMessage {
+          width: 30px;
+        }
+      }
+
+      .blockImgProfile {
+        display: flex;
+
+        .blockProfileChildren {
+          width: 40px;
+          height: 40px;
+          border: 1px solid $grey-one;
+          border-radius: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 35px;
+
+          .iconProfile {
+            width: 100%;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+
+    .blockUsers {
+      .namedUsers {
+        margin-left: 10px;
+        margin-top: 20px;
+        color: black;
+        font-weight: bold;
+      }
+
+      .emailUsers {
+        margin-left: 10px;
+        margin-top: -15px;
+        color: $grey-one;
+      }
+
+      .profileLink {
+        text-decoration: none;
+      }
+    }
+
+    .buttonMenuSecret {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      position: relative;
+
+      @media screen and (max-width: 3000px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+
+      .btnMenuSecret {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+
+        .imgButtonSecret {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+
+
+  }
+
+  .lineIconProfile {
+    margin-left: 10px;
+    width: 1px;
+    margin-top: 20px;
+    height: 40px;
+    background-color: $grey-one;
+    border: none;
+  }
+
+  .lineNavbar {
+    height: 1px;
+
+  }
+
+  .lineBLock {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    margin: 0;
+    padding: 0%;
+
+    .lineNavbar {
+      height: 1px;
+      border: none;
+      background-color: $grey-one;
+
+    }
+  }
+
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+$grey-one: rgb(204, 204, 204);
+$orange-one: rgb(255, 149, 0);
+$grey-two: rgb(124, 124, 124);
+
+.bascetContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 800px;
+  overflow: auto;
+
+  .blockOneBascet {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+
+    .podBlockOneBascet {
+      display: flex;
+
+      .bascetImg {
+        width: 30%;
+
+        .imgGettinBascet {
+          width: 100%;
+          border-radius: 10px;
+        }
+
+      }
+
+      .bascetText {
+        width: 70%;
+
+        .settingsText {
+          margin-left: 20px;
+
+          .namedText {
+            font-family: 'Ubuntu', sans-serif;
+            max-width: 100%;
+          }
+
+          .priceText {
+            color: $grey-one;
+            font-family: 'Ubuntu', sans-serif;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .priceBlock {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 20px;
+    border: 1px solid $grey-one;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .blockMyGoods {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .goToPayBtn {
+        transition: 0.4s;
+        width: 90%;
+        height: 50px;
+        border: 1px solid $orange-one;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        color: $orange-one;
+        font-size: 16px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .goToPayBtn:hover {
+        transition: 0.4s;
+        width: 90%;
+        height: 50px;
+        border: 1px solid $orange-one;
+        border-radius: 10px;
+        background-color: $orange-one;
+        color: white;
+        font-size: 16px;
+        font-family: 'Ubuntu', sans-serif;
+        cursor: pointer;
+      }
+    }
+
+    .waysPay {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 15px;
+      color: $grey-one;
+      max-width: 75%;
+      margin-left: 5%;
+    }
+
+    .warningBlock {
+      background-color: rgb(242, 242, 242);
+      width: 89%;
+      margin-left: 4.6%;
+      height: 40px;
+      padding-left: 10px;
+      border-radius: 5px;
+
+
+      .payWarning {
+        color: rgb(97, 95, 95);
+        font-family: 'Ubuntu', sans-serif;
+        padding-top: 10px;
+      }
+    }
+
+    .lineOknoBascet {
+      margin-top: 20px;
+      background-color: $grey-one;
+      border: none;
+      height: 1px;
+    }
+
+    .blockYourBascet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+    }
+
+  }
+}
+
+
+.itemYourBascetOne {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.textYourBascet {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.quantityProduct {
+  margin-top: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: $grey-two;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.quantityText {
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.priceQuantity {
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: $grey-two;
+  text-align: right;
+  margin-right: 20px;
+}
