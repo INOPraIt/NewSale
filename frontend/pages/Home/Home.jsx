@@ -227,9 +227,9 @@ export default function Home() {
           </p>
           <p className='descriptionHeader'>Категория:</p>
           <ul className='blockUl'>
-            <li className='liText'>Сайт</li>
+            <li className='liText'>Site</li>
           </ul>
-          <p className='descriptionHeader'>Теги:</p>
+          <p className='descriptionHeader'>Tags:</p>
           <ul className='blockUl'>
             <li className='liText'>IT и технологии</li>
             <li className='liText'>Лендинг</li>
